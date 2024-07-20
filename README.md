@@ -1,6 +1,6 @@
 # What is Arte
 
-Arte is an `API-centric` framework that provides the essential features for hosting APIs. This emphasizes the framework's vision to completely separate backend logic from from potential front-end views clients adhering to the SOA fundamentals to facilitate scalalbility and maintainability.
+Arte is an `API-centric` framework that provides the essential features for hosting APIs. This emphasizes the framework's vision to completely separate backend logic from potential front-end views clients adhering to the SOA fundamentals to facilitate scalalbility and maintainability.
 
 #### What Arte excels at ?
 Arte perfectly suits database management systems by helping you organize your system and takes over many of the repetitive tasks automatically while maintaining max performance by `eliminating additional computational overhead`. That's done through utilizing framework core utilities as they are designed to `decrease db calls, and intensive computational operations` as much as possible.
@@ -68,7 +68,7 @@ Follow ROOT_DIR/.env.example to define db connection creds at ROOT_DIR/.env that
 
 > Have a look at `docs/db-automation.md` for more
 
-This can be useful in case you need to easier deployment process by running an `automation script` that automatically creates/inserts default records for you with a single script run. You can define your db deployment operations in a descriptive manner at `app/model/database` and then run `API_URL/db-script` and it will do the magic for you.
+This can be useful in case you need to easier deployment process by running an `automation script` that automatically creates tables and inserts default records for you with a single script run. You can define your db deployment operations in a descriptive manner at `app/model/database` and then run `API_URL/db-script` and it will do the magic for you.
 
 In addition to deployment, db-script also generates a `relation map` at app/model/database/joins.json every run that can be used with Arte `CustomMapper` base class to automatically join mappers together without writing complex SQL Queries by yourself for improved performance and readability.
 
