@@ -1,4 +1,4 @@
-# What is Arte
+# Overview
 
 Arte is an `API-centric` framework that provides the essential features for hosting APIs. This emphasizes the framework's vision to completely separate backend logic from potential front-end views clients adhering to the SOA fundamentals to facilitate scalalbility and maintainability.
 
