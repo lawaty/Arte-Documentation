@@ -85,10 +85,12 @@ class Entity1Mapper extends Mapper {
   public static array $optional = ['field3', 'field4'];
 }
 ```
+
 2. auto-sanitize in and out data by ensuring that required data are all available while entity creation and fetch as well.
 ```php
 $entity1 = Mapper1::create($data); // throws RequiredPropertyNotFound if not all required data are available and return object of type Entity1
 ```
+
 3. Powerful and abstract CRUD utilities
 ```php
 $entity1 = Mapper1::get($conditons); // conditions is an associative array of filters and returns the first match
@@ -188,3 +190,16 @@ See docs/automation.md
 
 #### More about System Stability ?
 See docs/No-Failure Guarantee.md
+
+# Projects Built With Arte
+Proudly, Arte has been used to build over 30 web apps so far including the following:
+
+- Ncms SAAS Instances
+- Mynty Collections: integrated with an existing wordpress system
+- Auto Trader: Have a look at Auto-Trade/Readme.md
+- HpEMR: integrated with an existing Symphony system
+- HpEMR Dashboard API: built completely with Arte with Arte aws plugin to communicate with aws lambda and dynamo db.
+- Talmee7
+- Ndo
+- Ip Geeks API
+- El Avocato API

@@ -12,10 +12,9 @@ The `Entity` class implements the `JsonSerializable` and `ArrayAccess` interface
 - **Automated Record Handling**: When using the `Mapper` class, entities can leverage methods like `save()` and `delete()` to automatically handle record updates and deletions. The `save()` method updates existing records based on changes, while `delete()` removes records, simplifying database management tasks.
 - **Dynamic Property Handling**: It provides methods like `naiveGet()` and `set()` to dynamically manage properties, including handling foreign key relationships and data sanitization. This dynamic handling allows for flexible and extensible data managemen.
 - **Automatic Change Tracking**: The `Entity` class includes mechanisms for tracking changes made to its properties (`$changes`). This feature is crucial for operations that need to persist only modified data, reducing unnecessary database interactions.
-- **Data Loading and Synchronization**: The `load()` method allows for the bulk loading of data into the entity, while the `isLoaded()` and `setLoaded()` methods manage the synchronization state. This ensures that entities are properly synchronized with their data source before performing operations.
+- **Lazy Loading**: The `load()` method allows for the bulk loading of data into the entity, while the `isLoaded()` and `setLoaded()` methods manage the synchronization state. This ensures that entities are properly synchronized with their data source before performing operations.
 - **Property Protection**: The `$protected` property allows for defining which properties should be protected from direct access or modifications. This feature is useful for enforcing security and data integrity.
 - **Foreign Key Handling**: The `$foreigns` property allows for mapping and managing foreign key relationships, enabling the easy association of entities with other domain objects. This feature simplifies the management of complex relationships between entities.
-
 - **Handy access**: Implementing `ArrayAccess` and `JsonSerializable` interfaces made it look like simple arrays. 
 
 ## Usage
